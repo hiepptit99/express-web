@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title %> </title>
+</head>
+<body>
+
+    <h1>Đăng ký</h1>
+    <form action="/register" method="POST">
+        <p id="err"><% if (err) { %>
+         <%= err %> 
+        <% } %></p>
+        <label for="username">username</label><br>
+        <input id="username" type="text" name="username"><br>
+        <label for="password">password</label><br>
+        <input id="password" type="password" name="password"><br>
+        <label for="repassword">repassword</label><br>
+        <input id="repassword" type="password" name="repassword"><br>
+        <input type="submit" value="Register">
+    </form>
+
+    
+</body>
+</html>
