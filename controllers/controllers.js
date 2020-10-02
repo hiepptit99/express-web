@@ -35,7 +35,8 @@ module.exports.postRegister = (req, res)=>{
     if( err!=''){
         res.render('register',{
             title: 'Register',
-            err : err
+            err : err,
+            err1 :"loi"
         });
         return;
     }
